@@ -631,7 +631,7 @@ print(head(STS_object, 4), format = "SPS")
 
 ::: fragment
 ::: {style="font-size: 80%;"}
-These are the same sequences in **DSS (Discrete Successive State)** format, removing the information of time spent in each state. The DSS states can be extracted using `TraMineR::seqdss` function:
+These are the same sequences in **DSS (Discrete Successive State)** format, removing the information of time spent in each state. The DSS sequences can be extracted using `TraMineR::seqdss` function:
 :::
 :::
 
