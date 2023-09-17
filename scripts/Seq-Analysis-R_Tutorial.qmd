@@ -29,7 +29,11 @@ execute:
   - Sequence clustering
 
 
-
+::: fragment
+::: {style="font-size: 60%;"}
+All code is available on [GitHUb](https://github.com/AuraFrizzati/tutorial-seq-analysis-R)
+:::
+:::
 
 
 
@@ -594,7 +598,7 @@ ggplot(STS_object_trates, aes(Var2, Var1)) +
 
 ::: fragment
 ::: {style="font-size: 80%;"}
-So far we have considered state sequences that include the length of time spent in each state. We can also look at sequences of transitions from one state into another, without considering the time. These are called **DSS (Discrete Successive State)** sequences and can be visualised using all the tools shown previously and also using Sankey diagrams.
+We can also look at sequences of transitions from one state into another, without considering the time spent in each state. These are called **DSS (Discrete Successive State)** sequences and can be visualised using all the tools shown previously and also using Sankey diagrams.
 :::
 :::
 
@@ -631,7 +635,7 @@ print(head(STS_object, 4), format = "SPS")
 
 ::: fragment
 ::: {style="font-size: 80%;"}
-These are the same sequences in **DSS (Discrete Successive State)** format, removing the information of time spent in each state. The DSS sequences can be extracted using `TraMineR::seqdss` function:
+These are the same sequences in **DSS (Discrete Successive State)** format, removing the information of time spent in each state. The DSS states can be extracted using `TraMineR::seqdss` function:
 :::
 :::
 
