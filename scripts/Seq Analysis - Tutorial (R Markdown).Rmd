@@ -647,6 +647,13 @@ chisq.test(
 
 The test Post-hoc tests reveal a significant statistical difference between the two GCSE groups in Clusters 1 and 7 (more individuals with GCSE Lower scores), and Clusters 2 and 6 (more individuals with GCSE Higher scores)
 
+```{r}
+chisq.posthoc.test::chisq.posthoc.test(
+  table(mock_data$cluster_group,
+        as.factor(mock_data$GCSE_results))
+  )
+```
+
 
 ```{r}
 ggseqplot::ggseqdplot(
